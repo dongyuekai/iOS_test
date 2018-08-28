@@ -25,7 +25,6 @@
     [tf setTextColor:[UIColor blackColor]];
     [tf setFont:[UIFont systemFontOfSize:20]];
     [tf.layer setCornerRadius:5];
-    [tf.layer setBorderColor:[UIColor blueColor].CGColor];
     [tf setBackgroundColor:[UIColor grayColor]];
     [tf setText:@"我是文本。。。。"];
     [self.view addSubview:tf];
