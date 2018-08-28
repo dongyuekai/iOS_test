@@ -16,13 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self initUI];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initUI{
+    [self.navigationItem setTitle:@"测试"];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    UITextField *tf = [[UITextField alloc]initWithFrame:CGRectMake(100, 100, 200, 50)];
+    [tf setTextColor:[UIColor blackColor]];
+    [tf setFont:[UIFont systemFontOfSize:20]];
+    [tf.layer setCornerRadius:5];
+    [tf.layer setBorderColor:[UIColor blueColor].CGColor];
+    [tf setBackgroundColor:[UIColor grayColor]];
+    [tf setText:@"我是文本。。。。"];
+    [self.view addSubview:tf];
 }
 
 
